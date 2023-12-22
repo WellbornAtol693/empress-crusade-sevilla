@@ -19,7 +19,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl bg-red-400">
                 <Link href="/">
                     <h1 className="text-2xl md:text-4xl font-bold">
-                        SAVON<span className="text-primary">D'ILE</span>
+                        SAVON<span className="text-primary">D&apos;ILE</span>
                     </h1>
                 </Link>
 
