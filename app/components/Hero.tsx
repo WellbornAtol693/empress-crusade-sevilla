@@ -20,7 +20,7 @@ export default async function Hero() {
             High quality Artisan Soaps!
           </h1>
           <p className="max-w-md leading-relaxed text-slate-200-200 xl:text-lg">
-            ALL soaps are hand crafted and made with 100% naturual ingredients.
+            ALL soaps are hand crafted and made with 100% natural ingredients.
             We offer the most affordable high quality products so come and shop with us.
           </p>
         </div>

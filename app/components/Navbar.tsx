@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { ShoppingBag } from "lucide-react";
 
 const links =[
+    { name: "Home", href: "/" },
     { name: "New Arrivals", href: "/NewArrivals" },
     { name: "Best Sellers", href: "/BestSellers" },
     { name: "Top Rated", href: "/TopRated" },
@@ -17,7 +18,7 @@ export default function Navbar() {
     const [bagItemCount, setBagItemCount] = useState(0);
 
     return (
-        <header className="border-b bg-violet-200">
+        <header className="border-b bg-violet-300">
             <div className="flex items-center justify-between mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl bg-red-400">
                 <Link href="/">
                     <h1 className="text-2xl md:text-4xl font-bold">
