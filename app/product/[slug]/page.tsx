@@ -1,3 +1,5 @@
+import AddToBag from "@/app/components/AddToBag";
+import CheckoutNow from "@/app/components/CheckoutNow";
 import ImageGallery from "@/app/components/ImageGallery";
 import { fullProduct } from "@/app/interface";
 import { client } from "@/app/lib/sanity";
@@ -63,7 +65,7 @@ export default async function ProductPge({
                   ${data.price}
                 </span>
                 <span className="mb-0.5 text-red-500 line-through">
-                  ${data.price + 5}
+                  ${data.price + 30}
                 </span>
               </div>
 
@@ -77,12 +79,28 @@ export default async function ProductPge({
               <span className="text-sm">2-4 Day Shipping</span>
             </div>
 
-            <div className="f;ex gap-2.5">
-            	<Button>Add To Bag</Button>
-            	<Button variant={"secondary"}>Checkout Now!</Button>
+            <div className="flex gap-2.5">
+              <AddToBag
+                currency="USD"
+                description={data.description}
+                image={data.images[0]}
+                name={data.name}
+                price={data.price}
+                key={data._id}
+                price_id={data.price_id}
+              />
+              <CheckoutNow
+                currency="USD"
+                description={data.description}
+                image={data.images[0]}
+                name={data.name}
+                price={data.price}
+                key={data._id}
+                price_id={data.price_id}
+              />
             </div>
 
-            <p className="mt-12 text-base text-gray-600 tracking-wide">
+            <p className="mt-12 text-base text-gray-500 tracking-wide">
               {data.description}
             </p>
           </div>

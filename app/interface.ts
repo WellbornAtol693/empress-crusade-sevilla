@@ -8,6 +8,7 @@ export interface simplifiedProduct {
 }
 
 export interface fullProduct {
+    price_id: string;
     _id: string;
     images: any;
     price: number;
