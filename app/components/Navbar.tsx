@@ -8,9 +8,6 @@ import { ShoppingBag } from "lucide-react";
 
 const links =[
     { name: "Home", href: "/" },
-    { name: "New Arrivals", href: "/NewArrivals" },
-    { name: "Best Sellers", href: "/BestSellers" },
-    { name: "Top Rated", href: "/TopRated" },
 ];
 
 export default function Navbar() {
